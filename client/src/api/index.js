@@ -1,6 +1,6 @@
 import axios from "axios";
 const API = axios.create({
-  baseURL: "https://shareai-8o01.onrender.com/api/",
+  baseURL: `${process.env.CLIENT_BASE_URL}/api/`,
 });
 
 export const GetPosts = async () => await API.get("/post/");
