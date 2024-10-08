@@ -1,6 +1,6 @@
 import axios from "axios";
 const API = axios.create({
-  baseURL: `${import.meta.env.CLIENT_BASE_URL}/api/`,
+  baseURL: `${import.meta.env.CLIENT_API_URL}/api/`,
 });
 
 export const GetPosts = async () => await API.get("/post/");
